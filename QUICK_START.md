@@ -2,28 +2,28 @@
 
 ## Prerequisites ✅
 - Node.js installed (v14 or higher)
-- Dependencies installed (run `npm install` in root and `cd client && npm install`)
+- Dependencies installed (run `npm install`)
 
 ## Start the Application
 
-### Option 1: Using the Start Script (Recommended)
+### Option 1: Using the Development Script (Recommended)
 ```bash
-./start.sh
+./dev-start.sh
 ```
 
 ### Option 2: Manual Start
 ```bash
-# Terminal 1 - Start backend server
-npm start
+# Install dependencies
+npm install
 
-# Terminal 2 - Start frontend server
-cd client
-npm start
+# Start development server
+npm run dev
 ```
 
 ## Access the Application
-- **Frontend**: http://localhost:3000
-- **Backend API**: http://localhost:3001/api/health
+- **Application**: http://localhost:3000
+- **API Health Check**: http://localhost:3000/api/health
+- **AI Journal API**: http://localhost:3000/api/journal-response
 
 ## How to Use
 1. **Enter your name** (optional) for personalized responses

@@ -86,22 +86,33 @@ A beautiful, compassionate AI-powered journal application that provides warm, we
 
 ## Deployment 🌐
 
-### Production Build
-```bash
-# Build the React app
-cd client
-npm run build
-cd ..
+### Deploy to Vercel (Recommended)
 
-# Start production server
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/ai-journal-app)
+
+**Quick Steps:**
+1. Fork this repository
+2. Connect your GitHub to Vercel
+3. Import the project
+4. Add `OPENAI_API_KEY` environment variable
+5. Deploy!
+
+📖 **Detailed Instructions**: See [VERCEL_DEPLOYMENT.md](./VERCEL_DEPLOYMENT.md)
+
+### Local Development
+```bash
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Serve production build
 npm start
 ```
 
 ### Environment Variables
-Make sure to set the following environment variables in production:
-- `OPENAI_API_KEY`: Your OpenAI API key
-- `PORT`: Server port (default: 3001)
-- `NODE_ENV`: Set to 'production'
+- `OPENAI_API_KEY`: Your OpenAI API key (required)
 
 ## Contributing 🤝
 
