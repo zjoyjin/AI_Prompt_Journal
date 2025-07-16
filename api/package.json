@@ -2,6 +2,7 @@
   "name": "ai-journal-api",
   "version": "1.0.0",
   "description": "Serverless API functions for AI Journal",
+  "type": "module",
   "main": "index.js",
   "dependencies": {
     "openai": "^4.20.1"

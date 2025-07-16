@@ -1,0 +1,11 @@
+node_modules
+.git
+.env
+*.log
+dev-start.sh
+QUICK_START.md
+VERCEL_DEPLOYMENT.md
+client
+.DS_Store
+.vscode
+.idea

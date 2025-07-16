@@ -7,10 +7,6 @@
       "config": {
         "distDir": "build"
       }
-    },
-    {
-      "src": "api/**/*.js",
-      "use": "@vercel/node"
     }
   ],
   "routes": [
@@ -23,12 +19,12 @@
       "dest": "/index.html"
     }
   ],
-  "env": {
-    "OPENAI_API_KEY": "@openai-api-key"
-  },
   "functions": {
     "api/journal-response.js": {
       "maxDuration": 30
+    },
+    "api/health.js": {
+      "maxDuration": 10
     }
   }
 }
